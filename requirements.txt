@@ -5,3 +5,9 @@ numpy
 matplotlib
 torch
 torchvision
+timm
+fastapi
+uvicorn
+requests
+pillow
+python-multipart
