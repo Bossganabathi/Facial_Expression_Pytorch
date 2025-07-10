@@ -15,7 +15,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # Original 
 # Define model
 # Load trained weights correctly
-state_dict = torch.load(r"C:\Users\User\Documents\Machine_Learning_Project\Facial_Expression_Pytorch\model\emotion_classifier_(latest_18).pth", map_location=torch.device('cpu'))  # or 'cuda'
+state_dict = torch.load(r"C:\Users\User\Documents\Machine_Learning_Project\Facial_Expression_Pytorch\Flask_Application\model_file\emotion_classifier_(latest_18).pth", map_location=torch.device('cpu'))  # or 'cuda'
 model_ft = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
 num_ftrs = model_ft.fc.in_features
 model_ft.fc = nn.Linear(num_ftrs, 3)
